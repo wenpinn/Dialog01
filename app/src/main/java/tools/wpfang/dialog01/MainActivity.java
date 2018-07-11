@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         pd.setTitle("Downloading");
         pd.setMessage("Please wait!!!");
         pd.setMax(200);
-        pd.setProgress(100);
+
         pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         pd.setButton(ProgressDialog.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
             @Override
@@ -66,5 +66,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         pd.show();
+        pd.setProgress(100);
     }
 }
