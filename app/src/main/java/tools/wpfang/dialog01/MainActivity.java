@@ -42,9 +42,23 @@ public class MainActivity extends AppCompatActivity {
         pd.setTitle("Downloading");
         pd.setMessage("Please wait!!!");
         pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        //pd.setMax(200);
-        //pd.setProgress(100);
-        //pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+
+        pd.setButton(ProgressDialog.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.cancel();
+            }
+        });
+        pd.show();
+    }
+
+    public void doProgress2(View view) {
+        ProgressDialog pd=new ProgressDialog(this);
+        pd.setTitle("Downloading");
+        pd.setMessage("Please wait!!!");
+        pd.setMax(200);
+        pd.setProgress(100);
+        pd.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
         pd.setButton(ProgressDialog.BUTTON_NEGATIVE, "Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {

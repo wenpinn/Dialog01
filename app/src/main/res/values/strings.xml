@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Dialog01</string>
+    <string name="progress_horizontal">Progress Horizontal</string>
+    <string name="progress_spinner">progress spinner</string>
+    <string name="open_alert_dialog">open alert dialog</string>
+    <string name="dialog_example">Dialog Example</string>
 </resources>
